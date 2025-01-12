@@ -10949,6 +10949,17 @@ header.masthead {
   background-size: cover;
 }
 
+header.masthead::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1C1816; /* Cor de fundo */
+  z-index: -1; /* Coloca a cor atrás da imagem */
+}
+
 @media (max-width: 768px) {
   header.masthead {
     background-size: cover; /* Ajusta para que a imagem caiba sem cortar */
